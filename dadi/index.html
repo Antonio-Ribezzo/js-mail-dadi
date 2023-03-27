@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gioco dei dadi</title>
     <!-- link Bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-   <!-- link style css -->
-   <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-primary">
+
+    <main class="container d-flex flex-column justify-content-center align-items-center">
+      <h1 class="text-uppercase text-white my-4">gioco dei dadi</h1>
+      <div id="container-card" class="text-white p-4 d-flex flex-column justify-content-center">
+        <div class="d-flex justify-content-around">
+          <button id="button" type="button" class="btn btn-primary mb-4"><h2 class="d-inline">Lancia i dadi</h2><i class="fa-solid fa-dice ms-2 fs-2"></i></button>
+          <button id="button-recharge" onclick="history.go(0)" type="button" class="btn btn-primary mb-4"><h2 class="d-inline">Ricarica</h2><i class="fa-solid fa-rotate-right ms-2 fs-2"></i>
+          </button>
+        </div>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <div class="d-flex flex-column">
+            <h3 id="numUser" class="mb-4">User:</h3>
+          </div>
+          <div class="d-flex flex-column">
+            <h3 id="numPc" class="mb-4">PC:</h3>
+          </div>
+        </div>
+        
+      </div>
+    </main>
 
 
 
@@ -17,5 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- myscript JS -->
     <script src="./assets/js/main.js"></script>
+    <!-- script confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   </body>
 </html>
